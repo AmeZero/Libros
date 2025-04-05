@@ -3,11 +3,11 @@ const urlsToCache = [
   '/',
   '/home.html',
   '/splash.html',
-  '/musica.html',
+  '/Musica.html',
   '/biblioteca.html',
-  '/styles.css',
-  '/script.js',
-  '/img/Logo.png'
+  '/stylesDG.css',
+  '/scriptN.js',
+  '/Logo1.png'
 ];
 
 self.addEventListener('install', event => {
