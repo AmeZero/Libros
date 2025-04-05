@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="StylesDG.css">
+  <link rel="icon" type="image/png" href="Logo1.png">
+  <link rel="manifest" href="manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log("Service Worker registrado 👍"))
+        .catch(err => console.log("Service Worker no pudo registrarse 😢", err));
+    });
+  }
+</script>
+</head>
+<body data-page="home">
+  <header>
+    <div class="logo">
+        <img src="Logo1.png" alt="Logo de la librería">
+      </div>      
+    <nav>
+      <ul>
+        <li><a href="home.html">🏠 Home</a></li>
+        <li><a href="musica.html">🎵 Música</a></li>
+        <li><a href="biblioteca.html">📚 Biblioteca</a></li>
+        <li id="bell-icon">🔔</li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="notification-bar">
+    <h3>Notificaciones</h3>
+    <ul id="notification-list"></ul>
+  </div>
+
+  <main class="splash">
+    <h1>Bienvenido a la Librería Web</h1>
+    <p>Explora música, libros y mucho más</p>
+    <a class="btn-empezar" href="musica.html">Empezar</a>
+  </main>
+
+  <script src="scriptN.js"></script>
+</body>
+</html>

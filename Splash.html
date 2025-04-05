@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="refresh" content="0; url=splash.html" />
+  <title>Splash</title>
+  <link rel="stylesheet" href="StylesDG.css">
+  <link rel="icon" type="image/png" href="Logo1.png">
+  <link rel="manifest" href="manifest.json">
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(reg => console.log("Service Worker registrado 👍"))
+        .catch(err => console.log("Service Worker no pudo registrarse 😢", err));
+    });
+  }
+</script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: fadeOut 1s ease-out 3s forwards;
+    }
+
+    .splash-container {
+      text-align: center;
+    }
+
+    .splash-logo {
+      width: 150px;
+      height: auto;
+      animation: bounce 2s infinite;
+    }
+
+    .splash-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+      margin-top: 20px;
+      font-family: 'Arial', sans-serif;
+    }
+
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-20px);
+      }
+    }
+
+    @keyframes fadeOut {
+      to {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="splash-container">
+    <img src="Logo1.png" alt="Logo" class="splash-logo">
+    <div class="splash-title">LIBRERÍA WEB</div>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      window.location.href = "home.html";
+    }, 4000); // redirige después de 4 segundos
+  </script>
+</body>
+</html>

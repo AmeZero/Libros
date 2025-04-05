@@ -1,0 +1,21 @@
+{
+  "name": "Librería Web",
+  "short_name": "Librería",
+  "start_url": "splash.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3f51b5",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "img/Logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/Logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

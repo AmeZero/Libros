@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+  }
+  
+  header {
+    background-color: #222;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+  }
+  
+  .logo img {
+    height: 60px; /* antes era 40px */
+    width: auto;
+  }  
+  
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+  }
+  
+  nav ul li a, #bell-icon {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+  }
+  
+  #notification-bar {
+    position: fixed;
+    top: 70px;
+    right: 15px;
+    background: white;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 15px;
+    width: 250px;
+    border-radius: 8px;
+    display: none;
+    z-index: 100;
+  }
+  
+  #notification-bar.show {
+    display: block;
+  }
+  
+  #notification-bar ul {
+    padding-left: 20px;
+  }
+  
+  /* Splash (Home) */
+  .splash {
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  .splash h1 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+  }
+  
+  .splash p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .btn-empezar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 6px;
+  }
+  
+  /* Música */
+  .galeria-musica {
+    padding: 30px;
+  }
+  
+  .tarjetas-musica {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .tarjeta {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+  }
+  
+  /* Biblioteca */
+  .galeria-libros {
+    padding: 30px;
+  }
+  
+  .tarjetas-libros {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .libro {
+    background-color: #e8f0fe;
+    border: 1px solid #ccc;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150px;
+  }
+  
