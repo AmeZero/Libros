@@ -1,7 +1,7 @@
 const CACHE_NAME = 'libreria-cache-v1';
 const urlsToCache = [
   '/',
-  '/index.html',
+  '/home.html',
   '/splash.html',
   '/musica.html',
   '/biblioteca.html',
